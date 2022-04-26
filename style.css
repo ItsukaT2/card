@@ -16,17 +16,10 @@ body
     background-attachment: fixed;
     background-size: cover;
 }
-.container
+.box
 {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    z-index: 1;
 }
-/*
 .box .square
 {
     position: absolute;
@@ -47,13 +40,13 @@ body
    }
    50%
    {
-       transform: translateY(30px);
+       transform: translateY(60px);
    }
 }
 .box .square:nth-child(1)
 {
-    top: 250px;
-    right: 250px;
+    top: -50px;
+    right: -30px;
     width: 100px;
     height: 100px;
     border-radius: 25px;
@@ -61,39 +54,49 @@ body
 }
 .box .square:nth-child(2)
 {
-    top: 500px;
-    right: 810px;
+    top: 100px;
+    left: -50px;
     width: 150px;
     height: 150px;
     border-radius: 25px;
-    z-index: 2;
 }
 .box .square:nth-child(3)
 {
-    top: 450px;
-    right: 290px;
-    width: 60px;
-    height: 60px;
+    top: -80px;
+    right: 300px;
+    width: 120px;
+    height: 120px;
     border-radius: 20px;
 }
 .box .square:nth-child(4)
 {
-    top: 250px;
-    right: 800px;
+    bottom: -10px;
+    left: 150px;
     width: 90px;
     height: 90px;
     border-radius: 25px;
 }
 .box .square:nth-child(5)
 {
-    top: 620px;
-    right: 600px;
+    bottom: 20px;
+    right: 60px;
     width: 60px;
     height: 60px;
     border-radius: 20px;
     z-index: 2;
 }
-*/
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
 .container .card
 {
     position: relative;
@@ -135,6 +138,21 @@ body
     text-shadow: black 1px 1px 1px #919191,1px 2px 1px #919191,1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191;
     font-weight: 300;
     z-index: 1;
+}
+input
+{
+    background: none;
+    text-align: center;
+    border: none;
+    color: #7289da;
+    text-shadow: black 1px 1px 1px #919191,1px 2px 1px #919191,1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191;
+    font-weight: 300;
+    z-index: 1;
+}
+input:hover
+{
+    filter: drop-shadow(0 0 20px #7289da) drop-shadow(0 0 40px #7289da)
+     drop-shadow(0 0 60px #7289da);
 }
 .container .card .content p a
 {
@@ -202,13 +220,4 @@ ul li button
     font-size: 3em;
     filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr))
      drop-shadow(0 0 60px var(--clr));
-}
-span
-{
-    color: #7289da;
-}
-span:hover
-{
-    filter: drop-shadow(0 0 20px #7289da) drop-shadow(0 0 40px #7289da)
-     drop-shadow(0 0 60px #7289da);
 }
