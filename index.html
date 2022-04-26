@@ -19,23 +19,24 @@
     <div class="container">
         <div class="card">
             <div class="content">
-                <h2>#Itsuka</h2>
+                <h2>Itsuka</h2>
                 <p>Just an otaku, gamer and big fan of FPS games (not that I'm good) and firearms,
                     I'm currently playing 
-                    <a href="" style="--clr:#fff;">left 4 dead 2</a>, 
-                    <a href="" style="--clr:#fff;">valorant</a> and 
-                    <a href="" style="--clr:#fff;">bloonsTD6</a>. I also play quite a few mobile games like:
+                    <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" style="--clr:#BEA621;">left 4 dead 2</a>, 
+                    <a href="https://playvalorant.com/pt-br/" style="--clr:#EE4054;">valorant</a> and 
+                    <a href="https://store.steampowered.com/app/960090/Bloons_TD_6/" style="--clr:#EC7C03;">bloonsTD6</a>. I also play quite a few mobile games like:
                     <a href="https://www.arknights.global/" style="--clr:#00C0CE;"> Arknights</a>,
                     <a href="https://gf.sunborngame.com/" style="--clr:#E9B014;"> GFL</a>,
                     <a href="https://bluearchive.nexon.com/events/2022/04/reg" style="--clr:#118BF9;"> Blue Archive</a> and 
                     <a href="https://azurlane.yo-star.com/#/" style="--clr:#00829D;">Azur Lane</a>, you can see me in some rhythm games too : 
                     <a href="https://bang-dream-gbp-en.bushiroad.com/" style="--clr:#E50051;">Bang dream</a>, 
-                    <a href="https://pt.wikipedia.org/wiki/Hatsune_Miku:_Project_DIVA" style="--clr:#43FEF1;">Project Diva</a>.Fluent in portuguese but i can converse in english and i know some things in japanese.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Hatsune_Miku:_Project_DIVA" style="--clr:#43FEF1;">Project Diva</a>.Fluent in portuguese but i can converse in english and i know some things in japanese, My discord:<span> Itsuka#8122</span></p>
                     
                     <ul>
                     <li><a class="btn" href="https://www.youtube.com/channel/UCLydYepr5Qj2GTOFBrdH_3Q" style="--clr:#ff0000;"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                    <li><a class="btn" href="" style="--clr:#7289da;"><ion-icon name="logo-discord"></ion-icon></a></li>
-                    <li><a class="btn" href="https://steamcommunity.com/id/perfildealguem/" style="--clr:#1f3051;"><ion-icon name="logo-steam"></ion-icon></a></li>
+                    <li><button onclick="copiarTexto()" class="btn" style="--clr:#7289da;"><ion-icon name="logo-discord"></ion-icon></button></li>
+                    <li><a class="btn" href="https://steamcommunity.com/id/perfildealguem/" style="--clr:#1285B1;"><ion-icon name="logo-steam"></ion-icon></a></li>
+                    <li><a class="btn" href="https://github.com/ItsukaT2" style="--clr:#fff;"><ion-icon name="logo-github"></ion-icon></a></li>
                     </ul>
             </div>
         </div>
@@ -52,6 +53,13 @@
         "max-glare": 0.5,
         max:10
 	});
+    function copiarTexto() {
+        let textoCopiado = document.getElementById("texto");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert(textoCopiado.value);
+    }
     </script>
 </body>
 
