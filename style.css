@@ -12,13 +12,82 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(https://64.media.tumblr.com/c281e2c5cbc1a41b596b0de7e8bfd2de/tumblr_osq73kcy8q1qeyvpto1_500.gifv);
-    background-attachment: fixed;
-    background-size: cover;
+    background: linear-gradient(0deg,#262626,#000);
+}
+.RGB
+{
+    position: relative;
+    margin: 200px auto;
+    width: 550px;
+    height: 350px;
+    background: linear-gradient(0deg,#000,#262626);
+}
+.RGB::before,
+.RGB::after
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    z-index: -1;
+    animation: rgb 20s linear infinite;
+}
+.RGB::after
+{
+    filter: blur(20px);
+}
+@keyframes rgb 
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    } 
+    100%
+    {
+        background-position: 0 0;
+    }     
 }
 .box
 {
     position: relative;
+}
+
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card
+{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 25px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 .box .square
 {
@@ -85,47 +154,22 @@ body
     border-radius: 20px;
     z-index: 2;
 }
-
-.container
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    z-index: 1;
-}
-
-.container .card
-{
-    position: relative;
-    width: 500px;
-    height: 300px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-}
 .container .card .content
 {
     padding: 20px;
     text-align: center;
     transition: 0.5s;
 }
-.container .card .content h2
+.container .card .content div
 {
     position: absolute;
-    top: 2px;
-    right: -10px;
+    top: 5px;
+    right: 10px;
     font-size: 7em;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
     color: rgba(255, 0, 0, 0.2);
     pointer-events: none;
     z-index: -1;
@@ -220,4 +264,55 @@ ul li button
     font-size: 3em;
     filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr))
      drop-shadow(0 0 60px var(--clr));
+}
+.container .card .content .btn:active
+{
+transform: scale(.90);
+}
+@media only screen and (max-width: 920px) 
+{
+    .container .card
+    {
+        width: 350px;
+        height: 300px;
+    }
+    .RGB
+    {
+    width: 400px;
+    height: 350px;
+    }
+}
+@media (pointer: coarse)
+{
+    .container .card
+    {
+        width: 350px;
+        height: 300px;
+    }
+    .container .card .content p a:active
+    {
+        color: var(--clr);
+        text-shadow: 0 0 10px var(--clr),
+                 0 0 20px var(--clr),
+                 0 0 40px var(--clr),
+                 0 0 80px var(--clr),
+                 0 0 120px var(--clr),
+                 0 0 160px var(--clr);
+        font-size: 20px;
+    }
+    input:hover
+    {
+        filter: drop-shadow(0 0 20px #7289da) drop-shadow(0 0 40px #7289da)
+        drop-shadow(0 0 60px #7289da);
+    }
+    .box .square
+    {
+        visibility: hidden;
+        display: none;
+    }
+    .RGB
+    {
+    width: 400px;
+    height: 350px;
+    }
 }
