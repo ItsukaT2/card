@@ -17,6 +17,7 @@ body
 .RGB
 {
     position: relative;
+    border-radius: 10px;
     margin: 200px auto;
     width: 550px;
     height: 350px;
@@ -27,6 +28,7 @@ body
 {
     content: '';
     position: absolute;
+    border-radius: 10px;
     top: -5px;
     left: -5px;
     background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
@@ -215,6 +217,7 @@ input:hover
                  0 0 160px var(--clr);
     font-size: 20px;
 }
+
 ul
 {
     position: absolute;
@@ -267,7 +270,7 @@ ul li button
 }
 .container .card .content .btn:active
 {
-transform: scale(.90);
+transform: scale(.50);
 }
 @media only screen and (max-width: 920px) 
 {
@@ -286,24 +289,12 @@ transform: scale(.90);
 {
     .container .card
     {
-        width: 350px;
+        width: 340px;
         height: 300px;
     }
-    .container .card .content p a:active
+    .container .card .content p
     {
-        color: var(--clr);
-        text-shadow: 0 0 10px var(--clr),
-                 0 0 20px var(--clr),
-                 0 0 40px var(--clr),
-                 0 0 80px var(--clr),
-                 0 0 120px var(--clr),
-                 0 0 160px var(--clr);
         font-size: 20px;
-    }
-    input:hover
-    {
-        filter: drop-shadow(0 0 20px #7289da) drop-shadow(0 0 40px #7289da)
-        drop-shadow(0 0 60px #7289da);
     }
     .box .square
     {
@@ -312,7 +303,7 @@ transform: scale(.90);
     }
     .RGB
     {
-    width: 400px;
-    height: 350px;
+    width: 290px;
+    height: 250px;
     }
 }
