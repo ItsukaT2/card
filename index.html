@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARD</title>
+    <title>Some website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="RGB">
-<div class="box">
-        <div class="square" style="--i:0;"></div>
-        <div class="square" style="--i:1;"></div>
-        <div class="square" style="--i:2;"></div>
-        <div class="square" style="--i:3;"></div>
-        <div class="square" style="--i:4;"></div>
+ 
+    <section>
 
-    <div class="container">
-        <div class="card">
-            <div class="content">
-                <div class="perfil"><img src="kotori perfil.jpg" width="100px" height="100px" alt="Itsuka"></div>
-                <p>
-                    Just another one who likes games, especially shooting and strategy ones.
-                     Some knowledge of Japanese culture and language. 
-                     I watch and read anime and manga
-                    aka Kenzo/Itsuka, Discord:
+        <div class="container">
+            <header>
+                <a href="#" class="logo">五河(いつか)</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Animes</a></li>
+                </ul>
+            </header>
+            <div class="content" id="content">
+                <h2>Who I am</h2>
+                <p>Just another one, who likes games, especially shooting and strategy.
+                    Some knowledge of Japanese culture and language. 
+                    I watch and read anime and manga
+                   aka Kenzo/Itsuka, Discord:
                 </p>
-                    <ul>
-                    <li><a class="btn" href="https://www.youtube.com/channel/UCLydYepr5Qj2GTOFBrdH_3Q" style="--clr:#ff0000;"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                    <li><button onclick="copyText()" class="btn" style="--clr:#7289da;"><ion-icon name="logo-discord"></ion-icon></button></li>
-                    <li><a class="btn" href="https://steamcommunity.com/id/perfildealguem/" style="--clr:#2a475e;"><ion-icon name="logo-steam"></ion-icon></a></li>
-                    <li><a class="btn" href="https://github.com/ItsukaT2" style="--clr:#fff;"><ion-icon name="logo-github"></ion-icon></a></li>
-                    </ul>
-                    <input id="text" value="Itsuka#8122" readonly/>
+                <input id="text" value="Itsuka#8122" readonly/> <br>
+               <!-- <a href="#">Read More</a> -->
             </div>
+            <div class="imgBx">
+                <img src="kotori perfil.jpg" alt="ERRO">
+            </div>
+            <ul class="sci">
+                <li><a class="btn" href="https://www.youtube.com/channel/UCLydYepr5Qj2GTOFBrdH_3Q" style="--clr:#ff0000;"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><button onclick="copyText()" class="btn" style="--clr:#7289da;"><ion-icon name="logo-discord"></ion-icon></button></li>
+                <li><a class="btn" href="https://steamcommunity.com/id/perfildealguem/" style="--clr:#2a475e;"><ion-icon name="logo-steam"></ion-icon></a></li>
+                <li><a class="btn" href="https://github.com/ItsukaT2" style="--clr:#fff;"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+            <p class="copyrighttxt">Just a one more mode to see me</p>
         </div>
-    </div>
-</div>
-</div>
-    <script>
-        let nav = document.querySelector('.nav');
-        nav.onclick = function(){
-            nav.classList.toggle('active')
-        }
-    </script>
+    </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
-        VanillaTilt.init(document.querySelector(".card"),{
-		max: 25,
-		speed: 400,
+/*VanillaTilt.init(document.querySelector(".content"),{
+		max: 0,
+		speed: 0,
         glare: true,
         "max-glare": 0.5,
-        max:10
+        max:0
 	});
-    function copyText() {
+*/
+function copyText() {
   var copyText = document.getElementById("text");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
@@ -65,5 +63,4 @@
 }
     </script>
 </body>
-
 </html>
