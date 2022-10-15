@@ -157,11 +157,12 @@ input
 .sci
 {
     position: absolute;
-    right: -25px;
+    right: 27px;
+    top: 414px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
 }
 .sci li
 {
@@ -265,6 +266,16 @@ ul li button:hover
     {
         display: inline-block;
     }
+    .sci
+{
+    position: absolute;
+    right: 233px;
+    top: 619px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 }
 @media (max-width: 700px)
@@ -304,16 +315,16 @@ ul li button:hover
     {
         display: inline-block;
     }
-    .sci 
-    {
-        position: relative;
-        flex-direction: row;
-        left: 0;
-    }
-    .sci li a
-    {
-        margin: 0 10px;
-    }
+    .sci
+{
+    position: absolute;
+    right: 50%;
+    top: 687px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
     .copyrighttxt
     {
         position: relative;
@@ -368,14 +379,14 @@ ul li button:hover
     {
         max-width: 250px;
     }
-    .sci 
-    {
-        position: relative;
-        flex-direction: row;
-        left: 0;
-    }
-    .sci li a
-    {
-        margin: 0 5px;
-    }
+    .sci
+{
+    position: absolute;
+    right: 50%;
+    top: 1005px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 }

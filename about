@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Some website</title>
+    <title>About</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,22 +13,20 @@
 
         <div class="container">
             <header>
-                <a href="#" class="logo">Name:Thomas K. Matsuta</a>
+                <a href="#" class="logo">About me</a>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Experience</a></li>
                 </ul>
             </header>
             <div class="content" id="content">
-                <h2>Who I am</h2>
-                <p>Just another one, who likes games, especially shooting and strategy.
-                    Some knowledge of Japanese culture and language. 
-                    I watch and read anime and manga
-                   aka Kenzo/Itsuka, Discord:
+                <h2></h2>
+                <p>
                 </p>
-                <input id="text" value="Itsuka#8122" readonly/> <br>
+
+                <input id="text" value="Itsuka#8122" readonly hidden/> <br>
                <!-- <a href="#">Read More</a> -->
             </div>
             <div class="imgBx">
